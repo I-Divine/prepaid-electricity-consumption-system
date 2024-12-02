@@ -21,6 +21,6 @@
             echo '<a href="/prepaid-electricity-system/views/profile.php?user_id='.$user_id.'" class=" hover:border-b-2 border-[#c5e1b5] text-[#c5e1b5] text-lg">View profile</a>';
                     
             ?>
-            <a href="/prepaid-eletricity-system/views/logout.php" class=" hover:border-b-2 border-[#c5e1b5] text-[#c5e1b5] text-lg">Leave</a>
+            <a href="/prepaid-electricity-system/views/logout.php" class=" hover:border-b-2 border-[#c5e1b5] text-[#c5e1b5] text-lg">Leave</a>
         </nav>
 </header>
