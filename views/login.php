@@ -1,6 +1,6 @@
 <?php require_once("./template/login_header.php")?>
 <div class=" w-full h-full  bg-[url('https://img.freepik.com/free-photo/electricity-high-voltage-pole-sky_1127-2985.jpg?t=st=1732837566~exp=1732841166~hmac=5d3d382ac7a6d9456413107df4d76c4169f2f496055d63e884508cbce9f57bd1&w=1800')]">
-  <div class="backdrop-brightness-75 backdrop-blur-sm flex justify-end  w-full h-full ">
+  <div class="backdrop-brightness-75 backdrop-blur-sm flex justify-end  w-full h-full font-['Poppins',sans-serif] ">
     <form method="POST" action="" class="w-1/3 m-4 p-8 rounded-3xl bg-white">
 
         <legend class="text-2xl text-center font-bold text-lime-500">Login</legend>

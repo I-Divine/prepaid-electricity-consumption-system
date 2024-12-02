@@ -6,7 +6,7 @@ require_once("../app/meter.php");
 require_once("../app/db_connection.php");
 $data = getMeters($conn);
 ?>
-<div class="p-12">
+<div class="p-12 font-['Poppins',sans-serif]">
   <h1 class="text-2xl text-[#3d692c]">Connected meters</h1>
   <?php
   require_once("../app/auth.php");
@@ -27,7 +27,7 @@ $data = getMeters($conn);
   ?>
 
   <div class="my-12"></div>
-  <a href="/database_class/views/add_meter.php" class="bg-[#3d692c] hover:bg-[#d3eac8] hover:text-[#3d692c] text-[#d3eac8] p-4 rounded-xl rounded border-0 ">Add meter</a>
+  <a href="/prepaid-electricity-system/views/add_meter.php" class="bg-[#3d692c] hover:bg-[#d3eac8] hover:text-[#3d692c] text-[#d3eac8] p-4 rounded-xl rounded border-0 ">Add meter</a>
 
 
 </div>

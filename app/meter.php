@@ -61,8 +61,9 @@ function addConsumptionAmount($conn, $amount, $meter_id):bool{
     $newBalance = $data["balance"] - $amount;
     $sql = "UPDATE consumption_data SET units_consumed = $amount, balance=$newBalance, consumption_date = UTC_DATE(), consumption_time = UTC_TIME() WHERE  meter_id = $meter_id";
     $result = $conn->query($sql);
-    echo $conn->error;
-    var_dump($result) ;
+    header("Location: http://localhost/prepaid-electricity-system/views/view_meter.php?meter_id=$meter_id");
+    // echo $conn->error;
+    // var_dump($result) ;
     return $result;
   }else{
     echo "<script type='text/javascript'>alert('Balance to low, Recharge immediately');</script>";

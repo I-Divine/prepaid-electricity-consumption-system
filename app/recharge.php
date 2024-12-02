@@ -14,6 +14,7 @@ function generateRechargeCode($data) {
 
 function getEnergyAmount($amount){
   $energyAmount = ($amount/1500)*5;
+  return $energyAmount;
 }
 
 ?>
@@ -27,12 +28,11 @@ function rechargeBalance($conn,$amount, $meter_id) {
   $balance = getConsumptionDataByMeterID($conn, $meter_id)["balance"];
   $new_balance = $energy_amount + $balance;
   $sql = "INSERT INTO recharge_history (meter_id, recharge_date, recharge_time, amount_recharged, recharge_code) VALUES ($meter_id, UTC_DATE(), UTC_TIME(), $amount, 'bbb')";
-  $sql2 = "UPDATE consumption_data SET balance = 2500.00 WHERE meter_id = $meter_id";
+  $sql2 = "UPDATE consumption_data SET balance = $new_balance WHERE meter_id = $meter_id";
   $result1 = $conn->query($sql);
   $result2 = $conn->query($sql2);
-  echo $conn->error;
-  var_dump($result1); 
-  var_dump($result2);
+  header("Location: http://localhost/prepaid-electricity-system/views/view_meter.php?meter_id=$meter_id");
+  
 }
 
 function getRechargeHistory($conn, $meter_id) {

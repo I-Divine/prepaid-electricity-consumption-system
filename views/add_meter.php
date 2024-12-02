@@ -4,7 +4,7 @@ require_once("../app/auth.php");
 
 check_login();
 ?>
-<div class="flex justify-center">
+<div class="flex justify-center font-['Poppins',sans-serif]">
   <form method="GET" action="" class="w-1/3 m-4 p-8 rounded-3xl text-[#2c4324] bg-[#afd89d]">
 
         <legend class="text-2xl text-[#2c4324] text-center font-bold">Add meter</legend>

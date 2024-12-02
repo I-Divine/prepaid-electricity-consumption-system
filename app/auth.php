@@ -41,7 +41,7 @@ function authenticate_user($auth_request, $conn){
        
         $_SESSION["username"] = $row["username"];
         $_SESSION["user_id"] = $row["user_id"];
-        header("Location: http://localhost/database_class/views/home.php");
+        header("Location: http://localhost/prepaid-electricity-system/views/home.php");
         break;
         return;
     }
@@ -57,6 +57,6 @@ function check_login(){
 
     return;
   }else{
-    header("Location: http://localhost/database_class/views/login.php");
+    header("Location: http://localhost/prepaid-electricity-system/views/login.php");
   }
 }
