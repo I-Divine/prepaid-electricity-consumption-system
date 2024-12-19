@@ -4,7 +4,7 @@ require_once("./template/app_header.php");
 <?php 
 require_once("../app/meter.php");
 require_once("../app/db_connection.php");
-$data = getMeters($conn);
+$data = getMeters($conn, $_SESSION["user_id"]);
 ?>
 <div class="p-12 font-['Poppins',sans-serif]">
   <h1 class="text-2xl text-[#3d692c]">Connected meters</h1>

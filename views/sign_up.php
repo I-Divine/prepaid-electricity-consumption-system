@@ -22,7 +22,7 @@
 
 
         <label for="name">Phone number:</label><br>
-        <input type="text" id="phones" name="phone" required class="p-2 rounded w-full border-2 border-lime-400"><br><br>
+        <input type="text" id="phones" name="phone" minlength="10" maxlength="11" required class="p-2 rounded w-full border-2 border-lime-400"><br><br>
 
         <button type="submit" class="bg-lime-400 rounded p-2 text-white m-auto">Sign Up</button>
     </form>

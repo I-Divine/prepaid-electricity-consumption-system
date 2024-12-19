@@ -18,6 +18,11 @@
                     session_start();
                 }
                 $user_id = $_SESSION["user_id"];
+                if(!isset($_SESSION["user_id"])){
+echo "<script type='text/javascript'>alert('You have to login');</script>";
+                    header("Location: http://localhost/prepaid-electricity-system/views/login.php");
+                    
+                }
             echo '<a href="/prepaid-electricity-system/views/profile.php?user_id='.$user_id.'" class=" hover:border-b-2 border-[#c5e1b5] text-[#c5e1b5] text-lg">View profile</a>';
                     
             ?>

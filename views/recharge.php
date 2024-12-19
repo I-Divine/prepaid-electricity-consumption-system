@@ -5,7 +5,7 @@ require_once("./template/app_header.php");
   <h1 class="text-center text-3xl mb-4">Recharge</h1>
    <form method="POST" class="w-1/2 min-w-max m-4 p-8 rounded-3xl text-[#2c4324] bg-[#afd89d] flex justify-between m-auto gap-4">
     <div class="row">
-      <input type="number" name="amount_recharge" placeholder="Recharge amount . N"
+      <input type="number" name="amount_recharge" step="0.01" placeholder="Recharge amount . N"
       class="p-2 rounded-xl w-full bg-[#f6faf3] text-[#2c4324]" required>
       <strong class = "block text-red-500 text-lg">N1500 -> 5kW.h</strong>
 </div>

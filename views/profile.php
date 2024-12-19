@@ -21,6 +21,13 @@ $user = getUser($conn,$user_id);
   <p>Phone number : <? echo $user["contact_number"]?> </p>
   <p>Email : <? echo $user["email"]?> </p>
   <p>Account Number : <? echo $user["account_number"]?> </p>
+  <p class="flex gap-4">
+    <a href="./updateDetails.php?phoneNumber=<?echo $user['contact_number']?>&userId=<?echo $user_id?>&address=<?echo $user['address']?>"
+    class="bg-[#3d692c] hover:bg-[#d3eac8] hover:text-[#3d692c] text-[#d3eac8] rounded-xl py-4 px-6">
+      Update Details
+    </a>
+    
+  </p>
 </div>
   
 <?php

@@ -10,7 +10,7 @@ check_login();
         <legend class="text-2xl text-[#2c4324] text-center font-bold">Add meter</legend>
   
         <label for="meter_number">Meter number:</label><br>
-        <input type="text" id="meter_number" name="meter_number" placeholder="e.g 111111111" required class="p-2 rounded-xl w-full bg-[#f6faf3] text-[#2c4324]"><br><br>
+        <input type="text" minlength="10" maxlength="10" id="meter_number" name="meter_number" placeholder="e.g 111111111" required class="p-2 rounded-xl w-full bg-[#f6faf3] text-[#2c4324]"><br><br>
 
         <label for="meter_type">Choose a meter type:</label>
       <select id="meter_type" class="p-2 rounded-lg bg-[#f6faf3] text-[#2c4324]" name="meter_type">

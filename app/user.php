@@ -8,4 +8,13 @@ function getUser($conn, $user_id):array{
 
   return $data; 
 }
+function updateUser($conn, $user_id, $details):void{
+  
+  $phoneNumber = $details["newPhoneNumber"];
+  $address = $details["newAddress"];
+  $sql = "UPDATE users SET address = '$address', contact_number = '$phoneNumber'";
+
+  $conn->query($sql);  
+  echo $conn->error;
+}
 ?>

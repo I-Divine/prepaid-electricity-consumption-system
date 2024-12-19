@@ -25,8 +25,8 @@ function addMeter($meter, $conn){
     echo "<script>alert('Meter already exist')</script>";
   }
 }
-function getMeters($conn):array{
- $sql = "SELECT * FROM meters";
+function getMeters($conn, $user_id):array{
+ $sql = "SELECT * FROM meters WHERE user_id = $user_id";
 
   $result = $conn->query($sql);  
   $data = [];
